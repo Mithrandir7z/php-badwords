@@ -8,9 +8,14 @@
 
     $lunghezza = strlen($paragrafo);
 
-    $newParagrafo = str_replace("Maialis", "***", $paragrafo);
+    $ParolaDaCensurare = $_GET['badword'];
+
+    $newParagrafo = str_replace($ParolaDaCensurare, "***", $paragrafo);
 
     echo $newParagrafo . " lunghezza: " . $lunghezza;
+
+    
 ?>
+
 
  
